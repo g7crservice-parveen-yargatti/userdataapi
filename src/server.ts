@@ -31,6 +31,6 @@ app.use(appRoutes.registerRoutes())
 app.listen(
     PORT,
     ()=>{
-        connectToDb('mongodb://127.0.0.1:27017','employeedatadb')
+        connectToDb('mongodb+srv://parveen:p123@cluster0.y4cwgqx.mongodb.net/employeedatadb?retryWrites=true&w=majority')
         console.log(`employee server is running at http://localhost:${PORT}${BASE_URL}`);
 })
